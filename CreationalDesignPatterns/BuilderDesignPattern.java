@@ -15,12 +15,12 @@ class Car{
         this.engine = car.engine;
         this.wheels = car.wheels;
         this.color = car.color;
-        this transitionType = car.transitionType
+        this.transitionType = car.transitionType;
     }
 
     @Override
-    public void toString(){
-        System,out.println(this.engine +" " + this.wheels +" "+ this.color + " " + this.transitionType);
+    public String toString(){
+        return this.engine +" " + this.wheels +" "+ this.color + " " + this.transitionType;
     }
 
     public static class CarBuilder{
